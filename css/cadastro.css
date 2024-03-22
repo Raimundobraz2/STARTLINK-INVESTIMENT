@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk' , sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color:#1A1A1E;
+    --btn-color:#9956F6;
+    --btn-color-hover:#9956F6;
+    --btn-border-color:#E0DBE6;
+    --input-color:#272626;
+    --text1-color:#FFFFFF;
+    --text2-color:#9956f6;
+    font-size: 62.5%;
+    
+}
+
+body{
+    background: var(--background-color);
+    overflow: hidden;
+    min-height: 100vh;
+    font-size: 1.6rem;
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-form {
+    max-width: 400px;
+  }
+
+  .login-image {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position:absolute;
+    left:-4rem;
+  }
+
+    .login-image img{
+    width: 90%;/* código da imagem do fundo */
+  }
+
+
+  .login-form{
+    position: relative;
+    left: 20rem;
+    top: -18rem;
+  }
+
+  select{
+    width: 30vw;
+    padding: 1.6rem 0.4rem;
+    border: solid 1px var(--btn-border-color);
+    border-radius: 0.5rem;
+    background: var(--input-color);
+    font-size: 1.5rem;
+    color: var(--btn-border-color);
+    padding-left: 1rem;
+    font:400;/* Define o peso da fonte como 400 (regular) */
+  }
+
+#username{
+    padding: 1.6rem 0.4rem;
+    border: solid 1px var(--btn-border-color);
+    border-radius: 0.5rem;
+    background: var(--input-color);
+    font-size: 1.5rem;
+    color: var(--btn-border-color);
+    padding-left: 1rem;
+    font:400;/* Define o peso da fonte como 400 (regular) */
+  }
+
+  #username:focus{
+    outline: 0.2rem solid var(--btn-color-hover);
+  }
+
+  #password:focus{
+    outline: 0.2rem solid var(--btn-color-hover);
+  }
+
+::placeholder{
+    font-size: 1.5rem;
+    color: var(--btn-border-color);
+}
+
+  #password{
+    padding: 1.6rem 0.4rem;
+    border: solid 1px var(--btn-border-color);
+    border-radius: 0.5rem;
+    background: var(--input-color);
+    font-size: 1.5rem;
+    color: var(--btn-border-color);
+    padding-left: 1rem;
+    font:400;/* Define o peso da fonte como 400 (regular) */
+  }
+
+
+  /* @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+    .login-image {
+      width: 100%;
+      height: 50vh;
+    }
+  } */
