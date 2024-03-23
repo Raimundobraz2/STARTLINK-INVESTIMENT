@@ -1,114 +1,147 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Space Grotesk' , sans-serif;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Space Grotesk' , sans-serif;
+box-sizing: border-box;
 }
 
 :root{
-    --background-color:#1A1A1E;
-    --btn-color:#9956F6;
-    --btn-color-hover:#9956F6;
-    --btn-border-color:#E0DBE6;
-    --input-color:#272626;
-    --text1-color:#FFFFFF;
-    --text2-color:#9956f6;
-    font-size: 62.5%;
-    
+--background-color:#1A1A1E;
+--btn-color:#9956F6;
+--btn-color-hover:#9956F6;
+--btn-border-color:#E0DBE6;
+--input-color:#272626;
+--text1-color:#FFFFFF;
+--text2-color:#9956f6;
+font-size: 62.5%;
 }
 
 body{
-    background: var(--background-color);
-    overflow: hidden;
-    min-height: 100vh;
-    font-size: 1.6rem;
+background: var(--background-color);
+overflow: hidden;
+min-height: 100vh;
+font-size: 1.6rem;
 }
-
 
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  .login-form {
-    max-width: 400px;
-  }
-
-  .login-image {
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    position:absolute;
-    left:-4rem;
-  }
-
-    .login-image img{
-    width: 90%;/* código da imagem do fundo */
-  }
-
-
-  .login-form{
-    position: relative;
-    left: 20rem;
-    top: -18rem;
-  }
-
-  select{
-    width: 30vw;
-    padding: 1.6rem 0.4rem;
-    border: solid 1px var(--btn-border-color);
-    border-radius: 0.5rem;
-    background: var(--input-color);
-    font-size: 1.5rem;
-    color: var(--btn-border-color);
-    padding-left: 1rem;
-    font:400;/* Define o peso da fonte como 400 (regular) */
-  }
-
-#username{
-    padding: 1.6rem 0.4rem;
-    border: solid 1px var(--btn-border-color);
-    border-radius: 0.5rem;
-    background: var(--input-color);
-    font-size: 1.5rem;
-    color: var(--btn-border-color);
-    padding-left: 1rem;
-    font:400;/* Define o peso da fonte como 400 (regular) */
-  }
-
-  #username:focus{
-    outline: 0.2rem solid var(--btn-color-hover);
-  }
-
-  #password:focus{
-    outline: 0.2rem solid var(--btn-color-hover);
-  }
-
-::placeholder{
-    font-size: 1.5rem;
-    color: var(--btn-border-color);
+  max-width: 500px; /* Largura máxima do contêiner de login */
+  margin: 0 auto; /* Centraliza o contêiner na página */
 }
 
-  #password{
-    padding: 1.6rem 0.4rem;
-    border: solid 1px var(--btn-border-color);
-    border-radius: 0.5rem;
-    background: var(--input-color);
-    font-size: 1.5rem;
-    color: var(--btn-border-color);
-    padding-left: 1rem;
-    font:400;/* Define o peso da fonte como 400 (regular) */
-  }
+.login-form {
+  position: relative;
+  left: 64rem;
+  top: 11rem;
+}
+
+.login-heading {
+  margin-bottom: 20px; /* Espaçamento inferior do título do formulário */
+  margin-top: -5rem;
+  position: absolute;
+}
+
+h1{
+  color: var(--text2-color);  /* Define a cor do texto para a variável --text2-color */
+  font:400;/* Define o peso da fonte como 400 (regular) */
+  font-size: 2.3rem;/* Define o tamanho da fonte como 2.3 rem */
+}
+
+h2{
+  color: var(--text1-color); /* Define a cor do texto para a variável --text1-color */
+  font:400;/* Define o peso da fonte como 400 (regular) */
+  font-size: 1.9rem; /* Define o tamanho da fonte como 1.9 rem */
+}
+
+a{
+  color: var(--text1-color);/* Define a cor do texto para a variável --text2-color */
+  text-decoration: none; /* Remove decoração de texto */
+  font:400;/* Define o peso da fonte como 400 (regular) */
+  font-size: 1.5rem;/* Define o tamanho da fonte como 2.3 rem */
+}
 
 
-  /* @media (max-width: 768px) {
-    .login-container {
-      flex-direction: column;
-    }
-    .login-image {
-      width: 100%;
-      height: 50vh;
-    }
-  } */
+a:hover {
+  transition: all 0.5s ease-in-out;
+  color: var(--text2-color); /* Define a cor do texto para a variável --text2-color */
+}
+
+.login-image {
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir */
+  background-position: center; /* Centraliza a imagem */
+  min-height: 100vh; /* Altura mínima igual à altura da tela */
+  position:absolute;
+  left:-4rem;
+}
+
+.login-image img{
+  width: 90%;/* código da imagem do fundo */
+}
+
+#username{
+  padding: 1.6rem 0.4rem;
+  border: solid 1px var(--btn-border-color);
+  border-radius: 0.5rem;
+  background: var(--input-color);
+  font-size: 1.5rem;
+  color: var(--btn-border-color);
+  padding-left: 1rem;
+  font:400;/* Define o peso da fonte como 400 (regular) */
+}
+
+#username:focus{
+  outline: 0.2rem solid var(--btn-color-hover);
+}
+
+#password:focus{
+  outline: 0.2rem solid var(--btn-color-hover);
+}
+
+::placeholder{
+  font-size: 1.5rem;
+  color: var(--btn-border-color);
+}
+
+#password{
+  padding: 1.6rem 0.4rem;
+  border: solid 1px var(--btn-border-color);
+  border-radius: 0.5rem;
+  background: var(--input-color);
+  font-size: 1.5rem;
+  color: var(--btn-border-color);
+  padding-left: 1rem;
+  font:400;/* Define o peso da fonte como 400 (regular) */
+}
+
+.form-select{
+  padding: 1.6rem 0.4rem;
+  border: solid 1px var(--btn-border-color);
+  border-radius: 0.5rem;
+  background: var(--input-color);
+  font-size: 1.5rem;
+  color: var(--btn-border-color);
+  padding-left: 1rem;
+  font:400;/* Define o peso da fonte como 400 (regular) */
+}
+
+.form-select:focus{
+  outline: 0.2rem solid var(--btn-color-hover);
+}
+
+.btn{
+  width: 37vw;
+  padding: 1.6rem 0.4rem;
+  border-radius: 0.5rem;
+  background: var(--btn-color);
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  font:400;/* Define o peso da fonte como 400 (regular) */
+  color: var(--text1-color);
+}
+
+.btn-outline-secondary{
+  background: transparent;
+}
+
+.btn-outline-secondary:hover{
+  background: var(--btn-color);
+}
