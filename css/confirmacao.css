@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Variáveis css*/
 :root{
     --background-color:#1A1A1E;
     --btn-color:#9956F6;
@@ -25,27 +24,26 @@ body{
     font-size: 1.6rem;
 }
 
-/* Código da estilização do formulário*/
+/* Código da estilização da imagem  */
 
 .login-container {
-    max-width: 500px; 
-    margin: 0 auto; 
-  }
+max-width: 500px; 
+}
   
-  .login-form {
-    position: relative;
-    left: 64rem;
-    top: 11rem;
-  }
+.login-form {
+position: relative;
+left: 74rem;
+top: 11rem;
+}
 
   .login-heading {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     margin-top: -5rem;
     position: absolute;
   }
 
   h1{
-    color: var(--text2-color); 
+    color: var(--text2-color);  
     font:400;
     font-size: 2.3rem;
   }
@@ -59,16 +57,13 @@ body{
   a{
     color: var(--text1-color);
     text-decoration: none; 
-    font:400;
     font-size: 1.5rem;
   }
 
   a:hover {
     transition: all 0.5s ease-in-out;
-    color: var(--text2-color);
+    color: var(--text2-color); 
   }
-
-  /* Código da estilização da imagem  */
 
   .login-image {
     background-size: cover; 
@@ -76,16 +71,14 @@ body{
     min-height: 100vh; 
     position:absolute;
     left:-4rem;
-    background-image: url(../img/img-login.png);
   }
 
   .login-image img{
     width: 90%;
   }
 
-/* Código da estilização do formulário*/
-
   #username{
+    padding: 1.6rem 0.4rem;
     border: solid 1px var(--btn-border-color);
     border-radius: 0.5rem;
     background: var(--input-color);
@@ -94,8 +87,6 @@ body{
     padding-left: 1rem;
     font:400;
   }
-
-  /* Código da estilização do focos*/
 
   #username:focus{
     outline: 0.2rem solid var(--btn-color-hover);
@@ -110,8 +101,8 @@ body{
     color: var(--btn-border-color);
 }
 
- /* Código da estilização do inputs*/
   #password{
+    padding: 1.6rem 0.4rem;
     border: solid 1px var(--btn-border-color);
     border-radius: 0.5rem;
     background: var(--input-color);
@@ -121,9 +112,9 @@ body{
     font:400;
   }
 
-/* Código da estilização dos botões*/
-
   .btn{
+    width: 37vw;
+    padding: 1.6rem 0.4rem;
     border-radius: 0.5rem;
     background: var(--btn-color);
     font-size: 1.5rem;
@@ -139,3 +130,4 @@ body{
   .btn-outline-secondary:hover{
     background: var(--btn-color);
   }
+

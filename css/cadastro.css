@@ -5,6 +5,8 @@ font-family: 'Space Grotesk' , sans-serif;
 box-sizing: border-box;
 }
 
+/* Variáveis css*/
+
 :root{
 --background-color:#1A1A1E;
 --btn-color:#9956F6;
@@ -23,9 +25,11 @@ min-height: 100vh;
 font-size: 1.6rem;
 }
 
+/* Código da estilização do formulário*/
+
 .login-container {
-  max-width: 500px; /* Largura máxima do contêiner de login */
-  margin: 0 auto; /* Centraliza o contêiner na página */
+  max-width: 500px; 
+  margin: 0 auto;
 }
 
 .login-form {
@@ -35,58 +39,64 @@ font-size: 1.6rem;
 }
 
 .login-heading {
-  margin-bottom: 20px; /* Espaçamento inferior do título do formulário */
+  margin-bottom: 20px; 
   margin-top: -5rem;
   position: absolute;
 }
 
 h1{
-  color: var(--text2-color);  /* Define a cor do texto para a variável --text2-color */
-  font:400;/* Define o peso da fonte como 400 (regular) */
-  font-size: 2.3rem;/* Define o tamanho da fonte como 2.3 rem */
+  color: var(--text2-color);  
+  font:400;
+  font-size: 2.3rem;
 }
 
 h2{
-  color: var(--text1-color); /* Define a cor do texto para a variável --text1-color */
-  font:400;/* Define o peso da fonte como 400 (regular) */
-  font-size: 1.9rem; /* Define o tamanho da fonte como 1.9 rem */
+  color: var(--text1-color); 
+  font:400;
+  font-size: 1.9rem; 
 }
 
 a{
-  color: var(--text1-color);/* Define a cor do texto para a variável --text2-color */
-  text-decoration: none; /* Remove decoração de texto */
-  font:400;/* Define o peso da fonte como 400 (regular) */
-  font-size: 1.5rem;/* Define o tamanho da fonte como 2.3 rem */
+  color: var(--text1-color);
+  text-decoration: none; 
+  font:400;
+  font-size: 1.5rem;
 }
 
 
 a:hover {
   transition: all 0.5s ease-in-out;
-  color: var(--text2-color); /* Define a cor do texto para a variável --text2-color */
+  color: var(--text2-color);
 }
 
+/* Código da estilização da imagem  */
+
 .login-image {
-  background-size: cover; /* Ajusta o tamanho da imagem para cobrir */
-  background-position: center; /* Centraliza a imagem */
-  min-height: 100vh; /* Altura mínima igual à altura da tela */
+  background-size: cover; 
+  background-position: center;
+  min-height: 100vh; 
   position:absolute;
   left:-4rem;
+  background-image: url(../img/img-cadastro.png);
 }
 
 .login-image img{
-  width: 90%;/* código da imagem do fundo */
+  width: 90%;
 }
 
+ /* Código da estilização do inputs*/
+
 #username{
-  padding: 1.6rem 0.4rem;
   border: solid 1px var(--btn-border-color);
   border-radius: 0.5rem;
   background: var(--input-color);
   font-size: 1.5rem;
   color: var(--btn-border-color);
   padding-left: 1rem;
-  font:400;/* Define o peso da fonte como 400 (regular) */
+  font:400;
 }
+
+/* Código da estilização do focos*/
 
 #username:focus{
   outline: 0.2rem solid var(--btn-color-hover);
@@ -102,25 +112,23 @@ a:hover {
 }
 
 #password{
-  padding: 1.6rem 0.4rem;
   border: solid 1px var(--btn-border-color);
   border-radius: 0.5rem;
   background: var(--input-color);
   font-size: 1.5rem;
   color: var(--btn-border-color);
   padding-left: 1rem;
-  font:400;/* Define o peso da fonte como 400 (regular) */
+  font:400;
 }
-
+/* Código da estilização do select*/
 .form-select{
-  padding: 1.6rem 0.4rem;
   border: solid 1px var(--btn-border-color);
   border-radius: 0.5rem;
   background: var(--input-color);
   font-size: 1.5rem;
   color: var(--btn-border-color);
   padding-left: 1rem;
-  font:400;/* Define o peso da fonte como 400 (regular) */
+  font:400;
 }
 
 .form-select:focus{
@@ -128,13 +136,11 @@ a:hover {
 }
 
 .btn{
-  width: 37vw;
-  padding: 1.6rem 0.4rem;
   border-radius: 0.5rem;
   background: var(--btn-color);
   font-size: 1.5rem;
   padding-left: 1rem;
-  font:400;/* Define o peso da fonte como 400 (regular) */
+  font:400;
   color: var(--text1-color);
 }
 
