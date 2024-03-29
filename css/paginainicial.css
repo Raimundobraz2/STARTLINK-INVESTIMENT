@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk' , sans-serif;
+    box-sizing: border-box;
+    }
+    
+    /* Variáveis css*/
+    
+    :root{
+    --background-color:#1A1A1E;
+    --btn-color:#9956F6;
+    --btn-color-hover:#9956F6;
+    --btn-border-color:#E0DBE6;
+    --input-color:#272626;
+    --text1-color:#FFFFFF;
+    --text2-color:#9956f6;
+    font-size: 62.5%;
+    }
+    
+    body{
+    background: var(--background-color);
+    overflow: hidden;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    }
+    
