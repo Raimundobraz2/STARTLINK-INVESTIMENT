@@ -16,6 +16,7 @@
     --input-color:#272626;
     --text1-color:#FFFFFF;
     --text2-color:#9956f6;
+    --text3-color:#272626;
     font-size: 62.5%;
     }
     
@@ -48,7 +49,7 @@
 
       .menu a{
       margin-top: 5rem; 
-      color: var(--menu-color);      
+      color: var(--text1-color);   
       }
 
       li{
@@ -66,7 +67,8 @@
 
       .notificacao a{
         margin-top: 2rem; 
-        color: var(--text1-color);  
+        color: var(--text3-color);
+
       }
 
       .notificacao img{
