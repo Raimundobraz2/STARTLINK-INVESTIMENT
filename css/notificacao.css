@@ -1,117 +1,108 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Space Grotesk' , sans-serif;
-    box-sizing: border-box;
-    }
+margin: 0;
+padding: 0;
+font-family: 'Space Grotesk' , sans-serif;
+box-sizing: border-box;
+}
     
-    /* Variáveis css*/
+/* Variáveis css*/
     
-    :root{
-    --background-color:#1A1A1E;
-    --menu-color:#272626;
-    --btn-color:#9956F6;
-    --btn-color-hover:#9956F6;
-    --btn-border-color:#E0DBE6;
-    --input-color:#272626;
-    --text1-color:#FFFFFF;
-    --text2-color:#9956f6;
-    --text3-color:#272626;
-    font-size: 62.5%;
-    }
+:root{
+--background-color:#1A1A1E;
+--menu-color:#272626;
+--btn-color:#9956F6;
+--btn-color-hover:#9956F6;
+--btn-border-color:#E0DBE6;
+--input-color:#272626;
+--text1-color:#FFFFFF;
+--text2-color:#9956f6;
+--text3-color:#272626;
+font-size: 62.5%;
+}
     
-     /* Estilo para ajustar a posição do conteúdo principal */
-    body{
-    background: var(--background-color);
-    overflow: hidden;
-    min-height: 100vh;
-    font-size: 1.6rem;
+ /* Estilo para ajustar a posição do conteúdo principal */
+body{
+background: var(--background-color);
+overflow: hidden;
+min-height: 100vh;
+font-size: 1.6rem;
+}
     
-    }
-    
-     /* Estilo para a barra lateral */
-     .sidebar {
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color:var(--menu-color);
-        padding-top: 20px;
-      }
+/* Estilo para a barra lateral */
+.sidebar {
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background-color:var(--menu-color);
+padding-top: 20px;
+}
   
-      /* Estilo para os links no menu */
-      .sidebar a {
-        padding: 10px 15px;
-        text-decoration: none;
-        font-size: 1.6rem;
-        display: block;
-      }
+/* Estilo para os links no menu */
+.sidebar a {
+padding: 10px 15px;
+text-decoration: none;
+font-size: 1.6rem;
+display: block;
+}
 
-      .menu a{
-      margin-top: 5rem; 
-      color: var(--text1-color);   
-      }
+.menu a{
+ margin-top: 5rem; 
+color: var(--text1-color);
+}
 
-      li{
-        list-style: none;
-        position: relative;
-        top: 5rem;
-        left: 0;
-      }
+img{
+padding: 0.1rem 0.5rem;
+margin-left: 0.4rem;
+margin-top: -0.6rem;
+}
 
-      img{
-      padding: 0.1rem 0.5rem;
-      margin-left: 0.4rem;
-      margin-top: -0.6rem;
-      }
+.notificacao a{
+margin-top: 2rem; 
+color: var(--text3-color);
+}
 
-      .notificacao a{
-        margin-top: 2rem; 
-        color: var(--text3-color);
+.notificacao img{
+margin-top: -0.1rem;
+}
 
-      }
+.chat a{
+margin-top: 2rem; 
+color: var(--text1-color); 
+}
 
-      .notificacao img{
-        margin-top: -0.1rem;
-      }
-
-      .chat a{
-        margin-top: 2rem; 
-        color: var(--text1-color); 
-      }
-
-      .chat img{
-        margin-top: -0.1rem;
-      }
+.chat img{
+margin-top: -0.1rem;
+}
       
-      .configuracao a{
-        margin-top: 20rem;
-        color: var(--text1-color)
-      }
+.configuracao a{
+margin-top: 20rem;
+color: var(--text1-color)
+}
 
-      .usuario a{
-        margin-top: 2rem;
-        color: var(--text1-color)
-      }
+.usuario a{
+margin-top: 2rem;
+color: var(--text1-color)
+}
 
-      /* Estilo para os links ativos no menu */
-      .sidebar a.active {
-        background-color: var(--text2-color);
-      }
+/* Estilo para os links ativos no menu */
+.sidebar a.active {
+background-color: var(--text2-color);
+}
   
-      /* Estilo para o conteúdo principal */
-      .content {
-        margin-left: 250px;
-        padding: 20px;
-      }
+/* Estilo para o conteúdo principal */
+.content {
+margin-left: 250px;
+padding: 20px;
+}
 
-      h1{
-        color: var(--text2-color); 
-        font:400;
-        font-size: 2.1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 5rem;
-        position: absolute;
-      }
+h1{
+color: var(--text2-color); 
+font:400;
+font-size: 2.1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 5rem;
+position: absolute;
+}
