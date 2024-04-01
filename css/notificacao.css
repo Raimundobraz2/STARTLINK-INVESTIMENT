@@ -10,13 +10,13 @@ box-sizing: border-box;
 :root{
 --background-color:#1A1A1E;
 --menu-color:#272626;
+--card-color:#E0DBE6;
 --btn-color:#9956F6;
 --btn-color-hover:#9956F6;
 --btn-border-color:#E0DBE6;
 --input-color:#272626;
 --text1-color:#FFFFFF;
 --text2-color:#9956f6;
---text3-color:#272626;
 font-size: 62.5%;
 }
     
