@@ -13,7 +13,9 @@ box-sizing: border-box;
 --card-color:#E0DBE6;
 --btn-color:#9956F6;
 --btn-color-hover:#9956F6;
+--btn-moda-color:#FFFFFF;
 --btn-border-color:#E0DBE6;
+--border-modal-color:#E0DBE6;
 --input-color:#272626;
 --text1-color:#FFFFFF;
 --text2-color:#9956f6;
@@ -119,16 +121,14 @@ padding: 20px;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+  cursor: none;
 }
 
 ::placeholder{
   color: var(--menu-color);
   font-size: 1.5rem;
   font-weight: 400;
-}
-
-input:focus{
-  outline: 0.2rem solid var(--btn-color-hover);
+  
 }
 
 .card-usuario img{
@@ -159,4 +159,77 @@ align-items: center;
 justify-content: center;
 margin-top: 5rem;
 position: absolute;
+}
+
+/* Estilização do button do modal*/
+.btn{
+display:flex;
+align-items: center;
+justify-content: center;
+margin-top: -1rem;
+background: var(--btn-moda-color);
+border: none;
+border-radius: 0.5rem;
+}
+
+.btn-primary{
+background: var(--btn-color);
+margin-top: 1rem;
+margin-right: 2rem;
+border: none;
+border-radius: 0.5rem;
+font-size: 1.3rem;
+}
+
+.btn-primary:hover{
+  background: var(--btn-color);
+}
+
+label{
+position: absolute;
+top: 11rem;  
+padding-left: 1.9rem;
+font:400;
+font-size: 1.4rem; 
+}
+
+/* Estilização do formulario*/
+.form-control{
+border: solid 2px var(--border-modal-color);
+border-radius: 0.5rem;
+}
+
+/* Estilos adicionais para o botão customizado para postar imagens*/
+.custom-file-input {
+color: transparent;
+cursor: pointer;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+visibility: hidden;
+}
+
+.custom-file-input::before {
+content: 'Selecionar Imagem';
+display: inline-block;
+color: var(--btn-color);
+border: 1px solid transparent;
+border-radius: .25rem;
+padding: .375rem .75rem;
+outline: none;
+white-space: nowrap;
+cursor: pointer;
+}
+
+.card{
+border:none;
+margin-top: 9rem; 
+margin-left: -19rem;
+margin-top: 1rem;
+z-index: -999;
+}
+
+.card-icone img{
+margin-top: -2rem;
+margin-left: -1rem;
 }

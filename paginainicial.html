@@ -30,21 +30,68 @@
 
 <!-- Conteúdo principal da página -->
 <div class="content">
+
   <div class="card-publicacao w-75 p-5">
     <div class="card-usuario"><img src="img/usuario.svg" alt="Usuario"> <span class="usuario-nome">Mateus Pedro</span></div>
-    <input type="text" class="w-100 p-5" placeholder="Publicar o seu  projeto">
      <div class="img-foto">
-      <img src="img/Icon material-photo-library.svg" alt="Foto"> 
-      <!-- <input type="file" name="foto" class="input-foto"> -->
-      <span class="foto">Imagem</span></div>
+  </div>  
+
+  <!-- Botão para abrir o modal -->
+<button type="button" class="btn w-100 p-5" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+<label for="Publicar">Publicar o seu  projeto</label>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="img/usuario.svg" alt="Usuario">
+
+        <span class="usuario-modal">Mateus Pedro</span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+       <!-- Formulário de publicação -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <textarea class="form-control" id="postContent" rows="3" placeholder="Publicar o seu  projeto"></textarea>
+          </div>
+          <!-- Adicionar imagens para publicar-->
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="input-group">
+                      <input type="file" class="custom-file-input" id="fileInput" accept="image/*">
+                    </div>
+                    <div class="card-icone">
+                      <img src="img/Icon material-photo-library.svg" alt="Icone-library">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary ">Publicar</button>
+      </div>
+    </div>
   </div>
-    <div class="card-poste w-75 p-3">
+</div>
+
+    <!-- <div class="card-poste w-75 p-3">
       <div class="card-foto-poste"><img src="img/usuario.svg" alt=""></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
       <div class="poste-img">
         <img src="img/Interseção 1.svg" alt="">
-      </div>
+      </div> -->
     </div>
 </div>
+<script src="js/script.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
