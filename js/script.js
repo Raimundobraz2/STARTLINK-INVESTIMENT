@@ -1,3 +1,5 @@
+//Código para adicionar imagem para publicar
+
 const fileInput = document.getElementById('fileInput');
   const imagePreview = document.getElementById('imagePreview');
 
@@ -13,3 +15,4 @@ const fileInput = document.getElementById('fileInput');
       imagePreview.querySelector('img').setAttribute('src', '#');
     }
   });
+

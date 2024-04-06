@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk' , sans-serif;
+    box-sizing: border-box;
+    }
+        
+    /* Variáveis css*/
+        
+    :root{
+    --background-color:#1A1A1E;
+    --menu-color:#272626;
+    --card-color:#E0DBE6;
+    --btn-color:#9956F6;
+    --btn-color-hover:#9956F6;
+    --btn-moda-color:#FFFFFF;
+    --btn-border-color:#E0DBE6;
+    --border-modal-color:#E0DBE6;
+    --input-color:#272626;
+    --text1-color:#FFFFFF;
+    --text2-color:#9956f6;
+    font-size: 62.5%;
+    }
+        
+    /* Estilo para ajustar a posição do conteúdo principal */
+    body{
+    background: var(--background-color);
+    overflow: hidden;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    }
+        
+    /* Estilo para a barra lateral */
+    .sidebar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:var(--menu-color);
+    padding-top: 20px;
+    }
+      
+    /* Estilo para os links no menu */
+    .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: block;
+    }
+    
+    .menu a{
+    margin-top: 5rem; 
+    color: var(--menu-color);      
+    }
+    
+    li{
+    list-style: none;
+    position: relative;
+    top: 5rem;
+    left: 0;
+    }
+    
+    img{
+    padding: 0.1rem 0.5rem;
+    margin-left: 0.4rem;
+    margin-top: -0.6rem;
+    }
+    
+    .notificacao a{
+    margin-top: 2rem; 
+    color: var(--text1-color);  
+    }
+    
+    .notificacao img{
+    margin-top: -0.1rem;
+    }
+    
+    .chat a{
+    margin-top: 2rem; 
+    color: var(--text1-color); 
+    }
+    
+    .chat img{
+    margin-top: -0.1rem;
+    }
+          
+    .configuracao a{
+    margin-top: 20rem;
+    color: var(--text1-color)
+    }
+    
+    .usuario a{
+    margin-top: 2rem;
+    color: var(--text1-color)
+    }
+    
+    /* Estilo para os links ativos no menu */
+    .sidebar a.active {
+     background-color: var(--text2-color);
+    }
+      
+    /* Estilo para o conteúdo principal */
+    .content {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 30rem;
+    padding: 20px;
+    }
+    
+    .card-publicacao{
+      background: var(--card-color);
+      border-radius: 0.5rem;
+    }
+    
+    .card-publicacao input{
+      border: none;
+      border-radius: 0.5rem;
+      background: var(--text1-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      cursor: none;
+      
+      margin-left: -5rem;
+    }
+    
+    ::placeholder{
+      color: var(--menu-color);
+      font-size: 1.5rem;
+      font-weight: 400;
+      
+    }
+    
+    .card-usuario img{
+      margin-top: -1.9rem;
+      margin-left: -1rem;
+    }
+    
+    .usuario-nome{
+      padding: 2rem 1rem;
+    }
+    
+    .img-foto{
+      margin-top: 3rem;
+    }
+    
+    .card-poste{
+    position: absolute;
+    top: 30rem;
+    background: var(--card-color);
+    }
+    
+    h1{
+    color: var(--text2-color); 
+    font:400;
+    font-size: 2.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    position: absolute;
+    }
+    
+    /* Estilização do button do modal*/
+    .btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1rem;
+    background: var(--btn-moda-color);
+    border: none;
+    border-radius: 0.5rem;
+    }
+    
+    .btn-primary{
+    background: var(--btn-color);
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    }
+    
+    .btn-primary:hover{
+      background: var(--btn-color);
+    }
+    
+    label{
+    position: absolute;
+    top: 11rem;  
+    padding-left: 1.9rem;
+    font:400;
+    font-size: 1.4rem; 
+    }
+    
+    /* Estilização do formulario*/
+    .form-control{
+    border: solid 2px var(--border-modal-color);
+    }
+    
+    /* Estilos adicionais para o botão customizado para postar imagens*/
+    .custom-file-input {
+    color: transparent;
+    cursor: pointer;
+    }
+    
+    .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+    }
+    
+    .custom-file-input::before {
+    content: 'Selecionar Imagem';
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    }
+    
+    .card-body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -4rem;
+      margin-left: 9rem;
+    }
+    
+    .card{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+    
+    .card-icone{
+    margin-top: -9rem;
+    position: absolute;
+    top: 13rem;
+    left: 9rem;
+    }
+    
+    .modal-footer{
+    border: none;
+    }

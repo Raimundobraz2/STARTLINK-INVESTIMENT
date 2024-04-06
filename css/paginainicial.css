@@ -122,6 +122,8 @@ padding: 20px;
   justify-content: center;
   margin-top: 2rem;
   cursor: none;
+  
+  margin-left: -5rem;
 }
 
 ::placeholder{
@@ -196,7 +198,6 @@ font-size: 1.4rem;
 /* Estilização do formulario*/
 .form-control{
 border: solid 2px var(--border-modal-color);
-border-radius: 0.5rem;
 }
 
 /* Estilos adicionais para o botão customizado para postar imagens*/
@@ -212,7 +213,6 @@ visibility: hidden;
 .custom-file-input::before {
 content: 'Selecionar Imagem';
 display: inline-block;
-color: var(--btn-color);
 border: 1px solid transparent;
 border-radius: .25rem;
 padding: .375rem .75rem;
@@ -221,15 +221,28 @@ white-space: nowrap;
 cursor: pointer;
 }
 
-.card{
-border:none;
-margin-top: 9rem; 
-margin-left: -19rem;
-margin-top: 1rem;
-z-index: -999;
+.card-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -4rem;
+  margin-left: 9rem;
 }
 
-.card-icone img{
-margin-top: -2rem;
-margin-left: -1rem;
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.card-icone{
+margin-top: -9rem;
+position: absolute;
+top: 13rem;
+left: 9rem;
+}
+
+.modal-footer{
+border: none;
 }

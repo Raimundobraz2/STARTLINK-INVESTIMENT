@@ -48,7 +48,7 @@ display: block;
 
 .menu a{
  margin-top: 5rem; 
-color: var(--text1-color);
+ color: var(--text1-color);
 }
 
 img{
@@ -106,3 +106,27 @@ justify-content: center;
 margin-top: 5rem;
 position: absolute;
 }
+
+.container{
+position: relative;
+top:2rem;
+}
+.card{
+background: var(--btn-border-color);
+}
+
+.card-body :nth-child(){
+position: relative;
+background: var(--text1-color);
+}
+
+.usuario-notificacoes{
+margin-top: 1rem;
+}
+
+.card-text{
+margin-top: -4rem;
+font-size: 1.5rem;
+margin-left: 7rem;
+}
+

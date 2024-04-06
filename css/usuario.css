@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk' , sans-serif;
+    box-sizing: border-box;
+    }
+        
+    /* Variáveis css*/
+        
+    :root{
+    --background-color:#1A1A1E;
+    --menu-color:#272626;
+    --card-color:#E0DBE6;
+    --btn-color:#9956F6;
+    --btn-color-hover:#9956F6;
+    --btn-moda-color:#FFFFFF;
+    --btn-border-color:#E0DBE6;
+    --border-modal-color:#E0DBE6;
+    --input-color:#272626;
+    --text1-color:#FFFFFF;
+    --text2-color:#9956f6;
+    font-size: 62.5%;
+    }
+        
+    /* Estilo para ajustar a posição do conteúdo principal */
+    body{
+    background: var(--background-color);
+    overflow: hidden;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    }
+        
+    /* Estilo para a barra lateral */
+    .sidebar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:var(--menu-color);
+    padding-top: 20px;
+    }
+      
+    /* Estilo para os links no menu */
+    .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: block;
+    }
+    
+    .menu a{
+    margin-top: 5rem; 
+    color: var(--menu-color);
+    }
+    
+    li{
+    list-style: none;
+    position: relative;
+    top: 5rem;
+    left: 0;
+    }
+    
+    img{
+    padding: 0.1rem 0.5rem;
+    margin-left: 0.4rem;
+    margin-top: -0.6rem;
+    }
+    
+    .notificacao a{
+    margin-top: 2rem; 
+    color: var(--text1-color);  
+    }
+    
+    .notificacao img{
+    margin-top: -0.1rem;
+    }
+    
+    .chat a{
+    margin-top: 2rem; 
+    color: var(--text1-color); 
+    }
+    
+    .chat img{
+    margin-top: -0.1rem;
+    }
+          
+    .configuracao a{
+    margin-top: 20rem;
+    color: var(--text1-color)
+    }
+    
+    .usuario a{
+    margin-top: 2rem;
+    color: var(--te)
+    }
+    
+    /* Estilo para os links ativos no menu */
+    .sidebar a.active {
+     background-color: var(--text2-color);
+    }
+      
+    /* Estilo para o conteúdo principal */
+    .content {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 30rem;
+    padding: 20px;
+    }
+    
+    .card-publicacao{
+      background: var(--card-color);
+      border-radius: 0.5rem;
+    }
+    
+    .card-publicacao input{
+      border: none;
+      border-radius: 0.5rem;
+      background: var(--text1-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      cursor: none;
+    }
+    
+    ::placeholder{
+      color: var(--menu-color);
+      font-size: 1.5rem;
+      font-weight: 400;
+      
+    }
+    
+    .card-usuario img{
+      margin-top: -1.9rem;
+      margin-left: -1rem;
+    }
+    
+    .usuario-nome{
+      padding: 2rem 1rem;
+    }
+    
+    .img-foto{
+      margin-top: 3rem;
+    }
+    
+    .card-poste{
+    position: absolute;
+    top: 30rem;
+    background: var(--card-color);
+    }
+    
+    h1{
+    color: var(--text2-color); 
+    font:400;
+    font-size: 2.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    position: absolute;
+    }
+    
+    .card {
+      width: 300px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+    }
+    .card-img-top {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Estilo para o círculo da foto de perfil */
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+     /* Estilo para o círculo da foto de perfil */
+     .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+    }
+    .profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Estilo para o botão de carregar foto */
+    #uploadButton {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(-50%, 50%);
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
