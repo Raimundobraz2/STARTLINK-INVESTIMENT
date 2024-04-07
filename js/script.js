@@ -1,18 +1,29 @@
 //Código para adicionar imagem para publicar
 
-const fileInput = document.getElementById('fileInput');
-  const imagePreview = document.getElementById('imagePreview');
+document.getElementById('uploadForm').addEventListener('submit', function(event) {
+event.preventDefault(); // Evita o envio padrão do formulário
 
-  fileInput.addEventListener('change', function() {
-    const file = this.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = function(event) {
-        imagePreview.querySelector('img').setAttribute('src', event.target.result);
-      };
-      reader.readAsDataURL(file);
-    } else {
-      imagePreview.querySelector('img').setAttribute('src', '#');
-    }
-  });
+  // Obtém o input do tipo file
+  var fileInput = document.getElementById('foto');
+  // Obtém a primeira foto selecionada (supondo que não há seleção múltipla)
+  var file = fileInput.files[0];
+
+  if (file) {
+    // Cria um objeto FileReader para ler o conteúdo do arquivo
+    var reader = new FileReader();
+
+    // Define a função de callback para quando a leitura for concluída
+    reader.onload = function(e) {
+      // Obtém o elemento de visualização da imagem
+      var previewImage = document.getElementById('previewImage');
+      // Atualiza o atributo src da imagem para exibir a foto carregada
+      previewImage.src = e.target.result;
+      // Exibe o contêiner de visualização da foto
+      document.getElementById('previewContainer').style.display = 'block';
+    };
+
+    // Lê o conteúdo do arquivo como uma URL de dados
+    reader.readAsDataURL(file);
+  }
+});
 

@@ -23,7 +23,6 @@ font-size: 62.5%;
  /* Estilo para ajustar a posição do conteúdo principal */
 body{
 background: var(--background-color);
-overflow: hidden;
 min-height: 100vh;
 font-size: 1.6rem;
 }
@@ -109,15 +108,19 @@ position: absolute;
 
 .container{
 position: relative;
-top:2rem;
+top:-1rem;
+left: 4rem;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .card{
 background: var(--btn-border-color);
 }
 
-.card-body :nth-child(){
+.card-body {
 position: relative;
-background: var(--text1-color);
+background:var(--text1-color);
 }
 
 .usuario-notificacoes{
@@ -130,3 +133,18 @@ font-size: 1.5rem;
 margin-left: 7rem;
 }
 
+.noticacoes{
+    display: flex;
+}
+
+.Icone-notificações{
+margin-top: -1rem;
+}
+
+.text-noticacao{
+padding: 1rem;
+margin-top: -1.8;
+color: var(--text2-color);
+font-weight: 400;
+font-size: 1.6rem;
+}

@@ -165,13 +165,10 @@ position: absolute;
 
 /* Estilização do button do modal*/
 .btn{
-display:flex;
-align-items: center;
-justify-content: center;
-margin-top: -1rem;
 background: var(--btn-moda-color);
 border: none;
 border-radius: 0.5rem;
+margin-left: 22rem;
 }
 
 .btn-primary{
@@ -187,30 +184,32 @@ font-size: 1.3rem;
   background: var(--btn-color);
 }
 
-label{
-position: absolute;
-top: 11rem;  
-padding-left: 1.9rem;
-font:400;
-font-size: 1.4rem; 
-}
+
 
 /* Estilização do formulario*/
-.form-control{
-border: solid 2px var(--border-modal-color);
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  background: var(--border-modal-color);
+  border: none;
 }
 
-/* Estilos adicionais para o botão customizado para postar imagens*/
-.custom-file-input {
-color: transparent;
-cursor: pointer;
+#foto{
+opacity: 0;  
 }
 
-.custom-file-input::-webkit-file-upload-button {
+.post-foto{
+  margin-top: -9rem;
+}
+
+#foto::-webkit-file-upload-button {
 visibility: hidden;
 }
-
-.custom-file-input::before {
+#foto::before {
 content: 'Selecionar Imagem';
 display: inline-block;
 border: 1px solid transparent;
@@ -222,27 +221,8 @@ cursor: pointer;
 }
 
 .card-body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -4rem;
-  margin-left: 9rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
-.card{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-}
-
-.card-icone{
-margin-top: -9rem;
-position: absolute;
-top: 13rem;
-left: 9rem;
-}
-
-.modal-footer{
-border: none;
-}
