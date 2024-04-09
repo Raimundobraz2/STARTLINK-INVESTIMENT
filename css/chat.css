@@ -49,9 +49,9 @@
     }
     
     .menu a{
-    margin-top: 5rem; 
-    color: var(--menu-color);      
-    }
+      margin-top: 5rem; 
+      color: var(--text1-color);
+     }
     
     li{
     list-style: none;
@@ -122,7 +122,6 @@
       justify-content: center;
       margin-top: 2rem;
       cursor: none;
-      
       margin-left: -5rem;
     }
     
@@ -162,87 +161,48 @@
     margin-top: 5rem;
     position: absolute;
     }
-    
-    /* Estilização do button do modal*/
-    .btn{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -1rem;
-    background: var(--btn-moda-color);
-    border: none;
-    border-radius: 0.5rem;
+
+    .mensagens{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 33rem;
+    background-color:var(--menu-color);
+    padding-top: 20px;
+    border:1px solid #e0dbe618;
     }
     
-    .btn-primary{
-    background: var(--btn-color);
-    margin-top: 1rem;
-    margin-right: 2rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1.3rem;
+    h2{
+      color: var(--text1-color);
+      margin-left: 1rem;
     }
-    
-    .btn-primary:hover{
-      background: var(--btn-color);
+
+    p{
+     color: var(--text2-color);
+     margin-top: -3rem;
+     left: 14rem;
+     position: absolute;
     }
-    
-    label{
-    position: absolute;
-    top: 11rem;  
-    padding-left: 1.9rem;
-    font:400;
-    font-size: 1.4rem; 
+
+    .input-mensagens{
+      margin-left: 1rem;
+      margin-top: 2rem;
     }
-    
-    /* Estilização do formulario*/
-    .form-control{
-    border: solid 2px var(--border-modal-color);
+
+    #chat-container {
+      height: 400px;
+      overflow-y: auto;
     }
-    
-    /* Estilos adicionais para o botão customizado para postar imagens*/
-    .custom-file-input {
-    color: transparent;
-    cursor: pointer;
+    /* Estilo para cada mensagem */
+    .message {
+      margin-bottom: 10px;
     }
-    
-    .custom-file-input::-webkit-file-upload-button {
-    visibility: hidden;
+    /* Estilo para as mensagens do usuário */
+    .message.user .message-body {
+      background-color: #007bff;
+      color: #fff;
     }
-    
-    .custom-file-input::before {
-    content: 'Selecionar Imagem';
-    display: inline-block;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    padding: .375rem .75rem;
-    outline: none;
-    white-space: nowrap;
-    cursor: pointer;
-    }
-    
-    .card-body{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: -4rem;
-      margin-left: 9rem;
-    }
-    
-    .card{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: none;
-    }
-    
-    .card-icone{
-    margin-top: -9rem;
-    position: absolute;
-    top: 13rem;
-    left: 9rem;
-    }
-    
-    .modal-footer{
-    border: none;
+    /* Estilo para as mensagens do interlocutor */
+    .message.interlocutor .message-body {
+      background-color: #f0f0f0;
     }
