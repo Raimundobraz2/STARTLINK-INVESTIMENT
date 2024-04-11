@@ -148,3 +148,21 @@ color: var(--text2-color);
 font-weight: 400;
 font-size: 1.6rem;
 }
+
+.notificacoes-button{
+position: relative;
+top: -4rem;
+margin-left: 75rem;
+}
+
+.icone-botton-notificaoes{
+position: absolute;
+cursor: pointer;
+}
+
+.icone-botton-notificaoes:hover{
+background: var(--text1-color);
+border-radius: 50%;
+width: 50;
+height: 20px;
+}
