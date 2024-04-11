@@ -114,6 +114,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+
 .card{
 background: var(--btn-border-color);
 }
