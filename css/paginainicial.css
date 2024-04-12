@@ -19,6 +19,7 @@ box-sizing: border-box;
 --input-color:#272626;
 --text1-color:#FFFFFF;
 --text2-color:#9956f6;
+--text3-color:#272626;
 font-size: 62.5%;
 }
     
@@ -164,14 +165,14 @@ position: absolute;
 }
 
 /* Estilização do button do modal*/
-.btn{
+/* .btn{
 background: var(--btn-moda-color);
 border: none;
 border-radius: 0.5rem;
 margin-left: 22rem;
-}
+} */
 
-.btn-primary{
+/* .btn-primary{
 background: var(--btn-color);
 margin-top: 1rem;
 margin-right: 2rem;
@@ -182,7 +183,7 @@ font-size: 1.3rem;
 
 .btn-primary:hover{
   background: var(--btn-color);
-}
+} */
 
 /* Estilização do formulario*/
 
@@ -191,11 +192,62 @@ font-size: 1.3rem;
   align-items: center;
   justify-content: center;
 }
+
 .card{
   background: var(--border-modal-color);
+ 
+}
+
+.card-body{
+ margin-top: 1rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+}
+
+.btn{
+  margin-left: 1rem;
+margin-top:1rem;
+text-align: left;
+padding-left: 43rem;
+background: var(--btn-moda-color);
+border-radius: 20rem;
+border: none;
+color: var(--text3-color);
+font-size: 1.4rem;
+font-weight: 400;
+}
+
+.foto-usuario{
+  margin-top: 1rem;
+}
+
+.card-publicacoes-usuario{
+  display: flex;
+  top: 2rem;
+  left:10rem;
+  position: absolute;
+}
+
+.modal-body{
+  position: relative;
+}
+
+.form-control{
+  margin-top: 1rem;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.modal-footer{
   border: none;
 }
 
+.modal-header{
+  border: none;
+}
 #foto{
 opacity: 0;  
 }
