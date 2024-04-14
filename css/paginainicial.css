@@ -207,7 +207,7 @@ font-size: 1.3rem;
 }
 
 .btn{
-  margin-left: 1rem;
+margin-left: 1rem;
 margin-top:1rem;
 text-align: left;
 padding-left: 43rem;
@@ -239,15 +239,57 @@ font-weight: 400;
   border: none;
   font-size: 1.4rem;
   font-weight: 400;
+  
 }
 
 .modal-footer{
-  border: none;
+border: none;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 
 .modal-header{
   border: none;
 }
+
+.modal-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 15rem;
+}
+
+.footer-button{
+display: flex;
+border-radius: 0.5rem;
+margin-top: 12rem;
+border: 2px solid var(--border-modal-color);
+
+}
+
+.btn-foto{
+background: transparent;
+position: absolute; 
+top: -5rem;
+left: 41rem;
+}
+
+button{
+border-radius: 0.5rem;
+background: var(--btn-color);
+font-size: 1.5rem;
+padding-left: 1rem;
+font:400;
+color: var(--text1-color);
+margin-top:20rem;
+border:none;
+}
+
 #foto{
 opacity: 0;  
 }
