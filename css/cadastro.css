@@ -77,7 +77,7 @@ a:hover {
   min-height: 100vh; 
   position:absolute;
   left:-4rem;
-  background-image: url(../img/img-cadastro.png);
+  background-image: url(../assets/img-cadastro.png);
 }
 
 .login-image img{

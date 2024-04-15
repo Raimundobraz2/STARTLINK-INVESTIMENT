@@ -26,7 +26,6 @@ font-size: 62.5%;
 /* Estilo para ajustar a posição do conteúdo principal */
 body{
 background: var(--background-color);
-overflow: hidden;
 min-height: 100vh;
 font-size: 1.6rem;
 }
@@ -101,7 +100,7 @@ color: var(--text1-color)
 }
   
 /* Estilo para o conteúdo principal */
-.content {
+.content{
 display: flex;
 align-items:center;
 justify-content: center;
@@ -109,48 +108,61 @@ margin-left: 30rem;
 padding: 20px;
 }
 
-.card-publicacao{
-  background: var(--card-color);
-  border-radius: 0.5rem;
+/* Estilização do card de publicações*/
+.card-poste{
+position: absolute;
+top: 15rem;
+left: -4rem;
+background: var(--card-color);
+margin:auto 4rem;
+border-radius: 0.5rem;
 }
 
-.card-publicacao input{
-  border: none;
-  border-radius: 0.5rem;
-  background: var(--text1-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-  cursor: none;
-  
-  margin-left: -5rem;
+.poste-img{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.icone-post{
+  position: absolute;
+  top: 35rem;
+  left: 2rem;
+}
+
+.button-icone{
+position: absolute;
+left: 73rem; 
+}
+
+
+input{
+margin:auto 10rem;
+border-radius: 20rem;
+background: var(--text1-color);
+font-size: 1.5rem;
+font:bold;
+color: var(--text3-color);
+border:none;
+margin-top: 9rem;
+position: relative;
+top: 1rem;
+}
+
+input:focus{
+  outline: 0.2rem solid var(--btn-color-hover);
 }
 
 ::placeholder{
-  color: var(--menu-color);
-  font-size: 1.5rem;
-  font-weight: 400;
-  
+  color: var(--text3-color);
+  font:bold;
 }
 
-.card-usuario img{
-  margin-top: -1.9rem;
-  margin-left: -1rem;
-}
-
-.usuario-nome{
-  padding: 2rem 1rem;
-}
-
-.img-foto{
-  margin-top: 3rem;
-}
-
-.card-poste{
-position: absolute;
-top: 30rem;
-background: var(--card-color);
+p{
+font-size: 1.1rem;
+font-weight: 400;
+color: var(--text3-color);
+margin-left: 2rem;
 }
 
 h1{
@@ -164,29 +176,7 @@ margin-top: 5rem;
 position: absolute;
 }
 
-/* Estilização do button do modal*/
-/* .btn{
-background: var(--btn-moda-color);
-border: none;
-border-radius: 0.5rem;
-margin-left: 22rem;
-} */
-
-/* .btn-primary{
-background: var(--btn-color);
-margin-top: 1rem;
-margin-right: 2rem;
-border: none;
-border-radius: 0.5rem;
-font-size: 1.3rem;
-}
-
-.btn-primary:hover{
-  background: var(--btn-color);
-} */
-
 /* Estilização do formulario*/
-
 .container{
   display: flex;
   align-items: center;
@@ -195,7 +185,6 @@ font-size: 1.3rem;
 
 .card{
   background: var(--border-modal-color);
- 
 }
 
 .card-body{
@@ -206,6 +195,7 @@ font-size: 1.3rem;
  position: relative;
 }
 
+/* Estilização do button do modal*/
 .btn{
 margin-left: 1rem;
 margin-top:1rem;
@@ -239,7 +229,6 @@ font-weight: 400;
   border: none;
   font-size: 1.4rem;
   font-weight: 400;
-  
 }
 
 .modal-footer{
@@ -248,7 +237,7 @@ position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
-
+margin-top: -5rem;
 }
 
 .modal-header{
@@ -290,31 +279,8 @@ margin-top:20rem;
 border:none;
 }
 
-#foto{
-opacity: 0;  
-}
-
-.post-foto{
-  margin-top: -9rem;
-}
-
-#foto::-webkit-file-upload-button {
-visibility: hidden;
-}
-#foto::before {
-content: 'Selecionar Imagem';
-display: inline-block;
-border: 1px solid transparent;
-border-radius: .25rem;
-padding: .375rem .75rem;
-outline: none;
-white-space: nowrap;
-cursor: pointer;
-}
-
 .card-body{
  display: flex;
  align-items: center;
  justify-content: center;
 }
-

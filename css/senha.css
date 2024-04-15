@@ -71,7 +71,7 @@ font-size: 2.3rem;
     min-height: 100vh; 
     position:absolute;
     left:-4rem;
-    background-image: url(../img/Grupo\ 28.png);
+    background-image: url(../assets/Grupo\ 28.png);
   }
 
   .login-image img{
@@ -84,7 +84,8 @@ font-size: 2.3rem;
     background: var(--input-color);
     font-size: 1.5rem;
     color: var(--btn-border-color);
-    padding-left: 1rem;
+    padding-left: 6rem;
+    text-align: center;
     font:400;
   }
 
@@ -127,4 +128,8 @@ font-size: 2.3rem;
   .btn-outline-secondary:hover{
     background: var(--btn-color);
   }
+
+::placeholder{
+  text-align: center;
+}
 

@@ -76,7 +76,7 @@ body{
     min-height: 100vh; 
     position:absolute;
     left:-4rem;
-    background-image: url(../img/img-login.png);
+    background-image: url(../assets/img-login.png);
   }
 
   .login-image img{
