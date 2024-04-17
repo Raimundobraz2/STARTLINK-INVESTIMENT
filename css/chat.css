@@ -19,6 +19,7 @@
     --input-color:#272626;
     --text1-color:#FFFFFF;
     --text2-color:#9956f6;
+    --text3-color:#272626;
     font-size: 62.5%;
     }
         
@@ -77,7 +78,7 @@
     
     .chat a{
     margin-top: 2rem; 
-    color: var(--text1-color); 
+    color: var(--text3-color); 
     }
     
     .chat img{
@@ -170,6 +171,7 @@
     background-color:var(--menu-color);
     padding-top: 20px;
     border:1px solid #e0dbe618;
+
     }
     
     h2{
@@ -189,10 +191,36 @@
       margin-top: 2rem;
     }
 
+    .input-pesquisar{
+      padding-left: 9rem;
+      background: transparent;
+      border: 1px solid var(--border-modal-color);
+      border-radius: 0.5rem;
+      padding: .4rem;
+      margin-top: 3rem;
+      color: var(--border-modal-color);
+    }
+
+    .input-pesquisar:focus{
+      outline: 0.2rem solid var(--btn-color-hover);
+    }
+
+    ::placeholder{
+      color: var(--card-color);
+      
+    }
+
+    .icone-pesquisar{
+      position: absolute;
+      padding: 1rem;
+      left: 1rem;
+    }
+
     #chat-container {
       height: 400px;
       overflow-y: auto;
     }
+
     /* Estilo para cada mensagem */
     .message {
       margin-bottom: 10px;

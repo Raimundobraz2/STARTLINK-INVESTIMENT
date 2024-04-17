@@ -118,15 +118,33 @@ margin:auto 4rem;
 border-radius: 0.5rem;
 }
 
+.card-foto-poste img{
+  margin-top: -3rem;
+}
+
 .poste-img{
 display: flex;
 align-items: center;
 justify-content: center;
 }
 
+.button-icone{
+  border-radius: 100%;
+  width:20px;
+  height:20px;
+  cursor: pointer;
+}
+
+.button-icone:hover{
+  background: #f6f5f8;
+  border-radius: 100%;
+  width:20px;
+  height:20px;
+}
+
 .icone-post{
   position: absolute;
-  top: 35rem;
+  top: 32rem;
   left: 2rem;
 }
 
@@ -134,7 +152,6 @@ justify-content: center;
 position: absolute;
 left: 73rem; 
 }
-
 
 input{
 margin:auto 10rem;
@@ -158,7 +175,7 @@ input:focus{
   font:bold;
 }
 
-p{
+.poste-text{
 font-size: 1.1rem;
 font-weight: 400;
 color: var(--text3-color);
@@ -258,7 +275,6 @@ display: flex;
 border-radius: 0.5rem;
 margin-top: 12rem;
 border: 2px solid var(--border-modal-color);
-
 }
 
 .btn-foto{
